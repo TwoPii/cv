@@ -1,0 +1,25 @@
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+    justify-content: space-evenly;
+    height: 200px;
+
+    .name {
+      font-size: large;
+      margin-bottom: 50px;
+    }
+
+    .networks {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 70px;
+      margin-top: 50px;
+    }
+
+    .linkedin, .github {
+      cursor: pointer;
+    }
+  }
