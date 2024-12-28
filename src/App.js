@@ -1,11 +1,11 @@
-import { BrowserRouter, Route, Routes, Link } from 'react-router-dom';
+import { BrowserRouter, Route, Routes, NavLink } from 'react-router-dom';
 import './App.css';
 
 import React from 'react';
-import Home from './components/home/Home';
-import About from './components/about/About';
-import Resume from './components/resume/Resume';
-import Work from './components/work/Work';
+import Home from './pages/home/Home';
+import About from './pages/about/About';
+import Resume from './pages/resume/Resume';
+import Work from './pages/work/Work';
 
 class App extends React.Component {
   render() {
@@ -18,10 +18,10 @@ class App extends React.Component {
               <span className="role">Software Developer</span>
             </div>
             <div className="right">
-              <Link className="tab" to ="/">Welcome</Link>
-              <Link className="tab" to ="/work">Work</Link>
-              <Link className="tab" to ="/resume">Resume</Link>
-              <Link className="tab" to ="/about">About</Link>
+              <NavLink className={({ isActive}) => (isActive ? "selected tab": "tab")} to ="/">Welcome</NavLink>
+              <NavLink className={({ isActive}) => (isActive ? "selected tab": "tab")}to ="/work">Work</NavLink>
+              <NavLink className={({ isActive}) => (isActive ? "selected tab": "tab")} to ="/resume">Resume</NavLink>
+              <NavLink className={({ isActive}) => (isActive ? "selected tab": "tab")} to ="/about">About</NavLink>
             </div>
           </div>
         </div>
