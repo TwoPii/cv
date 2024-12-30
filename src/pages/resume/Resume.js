@@ -3,6 +3,10 @@ import styles from './Resume.module.css';
 import WorkCard from "../../components/work-card/WorkCard";
 import EducationCard from "../../components/education-card/EducationCard";
 
+import itequia_pic from '../../assets/itequia.png';
+import ypsomed_pic from '../../assets/ypsomed.png';
+
+
 class Resume extends React.Component {
     render() {
         return (
@@ -13,11 +17,14 @@ class Resume extends React.Component {
                     </div>
                     <div className={styles["job-items"]}>
                         <WorkCard role="Technical Lead" company="Ypsomed Software S.L." period="January 2022 - December" 
-                            description="Description of the activities that I did: Lorem ipsum dolor sit amet." />
+                            description="Description of the activities that I did: Lorem ipsum dolor sit amet."
+                            image={ypsomed_pic} />
                         <WorkCard role="Technical Lead" company="Ypsomed Software S.L." period="January 2022 - December" 
-                            description="Description of the activities that I did: Lorem ipsum dolor sit amet." />
+                            description="Description of the activities that I did: Lorem ipsum dolor sit amet." 
+                            image={ypsomed_pic}/>
                         <WorkCard role="Technical Lead" company="Ypsomed Software S.L." period="January 2022 - December" 
-                            description="Description of the activities that I did: Lorem ipsum dolor sit amet." />
+                            description="Description of the activities that I did: Lorem ipsum dolor sit amet." 
+                            image={itequia_pic}/>
                     </div>
                 </div>
                 <div className={styles.education}>
