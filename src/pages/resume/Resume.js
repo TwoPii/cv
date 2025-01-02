@@ -3,8 +3,8 @@ import styles from './Resume.module.css';
 import WorkCard from "../../components/work-card/WorkCard";
 import EducationCard from "../../components/education-card/EducationCard";
 
-import itequia_pic from '../../assets/itequia.png';
-import ypsomed_pic from '../../assets/ypsomed.png';
+import { jobs } from "./Jobs";
+import { degrees } from "./Degrees";
 
 
 class Resume extends React.Component {
@@ -16,22 +16,17 @@ class Resume extends React.Component {
                         Career
                     </div>
                     <div className={styles["job-items"]}>
-                        <WorkCard role="Technical Lead" company="Ypsomed Software S.L." period="January 2022 - December" 
-                            description="Description of the activities that I did: Lorem ipsum dolor sit amet."
-                            image={ypsomed_pic} />
-                        <WorkCard role="Technical Lead" company="Ypsomed Software S.L." period="January 2022 - December" 
-                            description="Description of the activities that I did: Lorem ipsum dolor sit amet." 
-                            image={ypsomed_pic}/>
-                        <WorkCard role="Technical Lead" company="Ypsomed Software S.L." period="January 2022 - December" 
-                            description="Description of the activities that I did: Lorem ipsum dolor sit amet." 
-                            image={itequia_pic}/>
+                            {jobs.map((job, index) => {
+                                return <WorkCard role={job.role} key={index} company={job.company} period={job.period} description={job.description} image={job.image} />
+                            })}
                     </div>
                 </div>
                 <div className={styles.education}>
                     <div className={styles.header}>Education</div>
                     <div className={styles["education-items"]}>
-                        <EducationCard degree={"Data Science Master"} university={"Universitat Oberta de Catalunya"} period={"2021-2022"} />
-                        <EducationCard degree={"Computer Science Degree"} university={"Universitat Politècnica de Catalunya"} period={"2015 - 2020"} />
+                        {degrees.map((degree, index) => {
+                            return <EducationCard key={index} degree={degree.degree} university={degree.university} period={degree.period} image={degree.image} />
+                        })}
                     </div>
                 </div>
             </div>

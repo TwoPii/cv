@@ -10,6 +10,7 @@
         
         .header {
             font-size: 24px;
+            font-weight: bold;
         }
 
         .job-items {
@@ -17,6 +18,12 @@
             flex-direction: column;
             align-content: space-evenly;
         }
+
+        @media only screen and (min-width: 1000px) {
+            .job-items {
+              max-width: 700px;
+            }
+          }
     }
 
     .education {
@@ -24,6 +31,7 @@
 
         .header {
             font-size: 24px;
+            font-weight: bold;
         }
 
         .education-items {
@@ -31,5 +39,15 @@
             flex-direction: column;
             align-content: space-evenly;
         }
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    .container {
+      flex-direction: row;
+
+      .education {
+        margin-left: 40px;
+      }
     }
 }

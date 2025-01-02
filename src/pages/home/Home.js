@@ -1,5 +1,6 @@
 import React from "react";
 import './Home.css';
+import pdf from '../../assets/Resume_EN.pdf';
 
 class Home extends React.Component {
     render() {
@@ -15,10 +16,14 @@ class Home extends React.Component {
                 <span>I'm Genís.</span>
                 <span className="purple">Nice to e-meet you!</span>
               </div>
-              <button className="resume">CHECK OUT MY RESUME</button>
+              <button className="resume" onClick={this.downloadPdf}>CHECK OUT MY RESUME</button>
             </div>
         </div>
         );
+    }
+
+    downloadPdf() {
+      window.open(pdf, '_blank');
     }
 }
 

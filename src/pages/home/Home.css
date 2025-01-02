@@ -1,3 +1,9 @@
+
+@keyframes blink {
+  from {background-color: yellow;}
+  to {background-color: white;}
+}
+
 .greeting {
     padding-top: 70px;
     padding-bottom: 100px;
