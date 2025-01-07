@@ -1,6 +1,7 @@
 # CV
 
-A personal web app to display my Curriculum Vitae (CV), made with React.
+A personal web app to display my Curriculum Vitae (CV), made with React. 
+Can be seen at https://genis-bosch.web.app/.
 
 ## Available Scripts
 
