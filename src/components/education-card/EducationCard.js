@@ -4,7 +4,7 @@ export default function EducationCard ({degree, university, period, image}){
     return (<div className={styles.container}>
         <div className={styles.info}>
             <div className={styles.logo}>
-                <img src={image}></img>
+                <img src={image} alt='logo'></img>
             </div>
             <div className={styles.text}>
                 <div className={styles.degree}>{degree}</div>
