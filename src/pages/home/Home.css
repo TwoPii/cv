@@ -28,7 +28,7 @@
     padding: 10px;
     
     .text {
-      font-size: xx-large;
+      font-size: 36px;
 
       .purple {
         color: purple;
@@ -46,6 +46,7 @@
       padding: 10px;
       background-color: white;
       border: 2px solid purple;
+      font-size: 22px;
     }
 
     .resume:hover {

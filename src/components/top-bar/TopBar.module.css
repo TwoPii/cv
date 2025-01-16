@@ -33,6 +33,7 @@
         border-right: 2px solid white;
         font-weight: lighter;
         text-decoration: none;
+        color: purple;
   
         &.selected {
           font-weight: bold;
@@ -45,11 +46,11 @@
   
       
       .name {
-        font-size:xx-large;
+        font-size: 52px;
       }
       
       .role {
-        font-size:small;
+        font-size: 18px;
         align-self: flex-end;
         padding-left: 10px;
         opacity: 0.4;
