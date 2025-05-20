@@ -1,8 +1,16 @@
 import itequia_pic from '../../assets/itequia.png';
 import ypsomed_pic from '../../assets/ypsomed.png';
 import erni_pic from '../../assets/erni.png';
+import thoughtworks_pic from '../../assets/thoughtworks.png';
 
 export var jobs = [
+    {
+        "role": "Senior Consultant Developer",
+        "company": "Thoughtworks",
+        "period": "March 2025 - Present",
+        "description": "Software developer for the consultancy firm Thoughtworks. Working with technologies such as React, .NET and GraphQL.",
+        "image": thoughtworks_pic
+    },
     {
         "role": "Technical Lead",
         "company": "Ypsomed Software S.L.",
